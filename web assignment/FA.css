@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(backphoto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#navbar ul li:hover::after {
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+#content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+#content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#FAQs {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: left;
+    color: #333;
+}
+
+#FAQs h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.faq {
+    margin-bottom: 20px;
+     display: block;
+    width: 80%;
+}
+
+.faq h3 {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+
+
+#FOOTER {
+    clear: left;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    height: 5%;
+    bottom: 10px;
+    position: fixed;
+    color: white;
+}
